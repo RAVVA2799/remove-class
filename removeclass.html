@@ -1,0 +1,56 @@
+
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<h3>Remove an HTML Element.</h3>
+
+<div id="div1">
+
+    <h5>/*p1 and p2 are id*/</h5>
+
+<p id="p1">This is a paragraph 1.</p>
+<p id="p2">This is another paragraph 2.</p>       
+<p id="p3">This is another paragraph 3.</p>    
+
+</div>
+
+<div id="div3">
+
+    <h5>/*p4,5 and p6 are id*/</h5>
+
+<p id="p4">This is a paragraph 4.</p>
+<p id="p5">This is another paragraph 5.</p>       
+<p id="p6">This is another paragraph 6.</p>    
+
+</div>
+
+
+<button onclick="myFunction()">Remove Element</button>
+<button onclick="my()">Remove Ele.</button>
+
+<script>
+
+
+ /*id name with p2 info. will be removed*/
+function myFunction() {   
+
+document.getElementById("p1").remove();   
+
+
+                                                
+}
+
+
+function my(){
+
+    const parent1 = document.getElementById("div3");
+const child2 = document.getElementById("p6");
+parent1.removeChild(child2);
+
+
+}
+</script>
+
+</body>
+</html>
